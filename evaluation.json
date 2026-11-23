@@ -1,0 +1,346 @@
+{
+  "provisional": true,
+  "test_label_source": "weak_provisional",
+  "dataset": {
+    "fragment_count": 666,
+    "total_with_augmentation": 832,
+    "train_size": 500,
+    "train_augmented": 166,
+    "train_positive": 115,
+    "train_negative": 385,
+    "val_size": 130,
+    "val_positive": 27,
+    "test_size": 202,
+    "test_positive": 30,
+    "document_count": 46,
+    "team_count": 34,
+    "fit_on": "train"
+  },
+  "threshold": 0.26,
+  "costs": {
+    "fp": 1.0,
+    "fn": 5.0,
+    "model_per_1000": 514.8514851485148,
+    "raw_per_1000": 519.8019801980198,
+    "majority_per_1000": 742.5742574257425,
+    "keyword_per_1000": 465.34653465346537,
+    "logistic_per_1000": 504.950495049505
+  },
+  "confusion": {
+    "tn": 138,
+    "fp": 34,
+    "fn": 14,
+    "tp": 16
+  },
+  "metrics": {
+    "accuracy": 0.7623762376237624,
+    "precision": 0.32,
+    "recall": 0.5333333333333333,
+    "f1": 0.4
+  },
+  "calibration": {
+    "temperature": 5.018911339130734,
+    "ece_before": 0.15076843394229233,
+    "ece_after": 0.08425164656336487
+  },
+  "errors_grouped": {
+    "seccion_mixta": 7,
+    "negacion_o_contraste": 7,
+    "confusion_de_clase": 5,
+    "texto_corto": 1
+  },
+  "errors": [
+    {
+      "section": "vehiculo",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.9046,
+      "threshold": 0.26,
+      "category": "seccion_mixta",
+      "hypothesis": "La sección mezcla propuesta técnica con costos o riesgos.",
+      "text": "Concepto USD Nota BOM directo 4,012 6 de 18 renglones estimados Mano de obra (100 h × MXN 130 ÷ 20) 650 Supuesto Flete, aduana, seguro y reserva de garantía 814 USD 400 + 3 % + 3 % del precio Costo entregado 5,476 Precio de venta 6,900"
+    },
+    {
+      "section": "competencia",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.8947,
+      "threshold": 0.26,
+      "category": "negacion_o_contraste",
+      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
+      "text": "Capacidad: Motor y Canal de Marco y Modelo Carga / Precio de lista Garantia y soporte operativo Potencia adquisición Arrastre $470,000 MXN - 3 Cilindros 1,250 lbs / $510,000 MXN 2 años limitados. Requiere Polaris Pro SD Intermediario Diésel / 24 HP 2,500 lbs ($23,500 USD - translado a agencia para validez. $25,500 USD) $420,000 MXN - John Deere Gator 3 Cilindros 1,400 lbs / $460,000 MXN Distribuidor 1 año o 1,000 horas. Enfoque XUV855M Diésel / 22.8 HP 1,500 lbs ($21,000 USD - africola agricola, no turistico. $23,000 USD) $490,000 MXN - 2 años a 2,000 horas."
+    },
+    {
+      "section": "suministro",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.7698,
+      "threshold": 0.26,
+      "category": "seccion_mixta",
+      "hypothesis": "La sección mezcla propuesta técnica con costos o riesgos.",
+      "text": "Adquirir materiales conforme avance la Vincular los cobros a los hitos contractuales. producción. Reserva presupuestaria Control mensual Contemplar el 10 % de contingencia en los Supervisar ingresos, egresos y obligaciones costos. pendientes. Nota financiera: El capital inicial de $5,000,000 MXN y su distribución son estimaciones de planeación. El esquema de pagos está sujeto a negociación con OAH y su viabilidad deberá comprobarse mediante un flujo de efectivo mensual que contemple costos operativos, impuestos y posibles retrasos."
+    },
+    {
+      "section": "operaciones",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.7655,
+      "threshold": 0.26,
+      "category": "seccion_mixta",
+      "hypothesis": "La sección mezcla propuesta técnica con costos o riesgos.",
+      "text": "Comprar frente a rentar Su solicitud señala que la compra permitiría reducir los costos generales al eliminar la renta. A continuación lo cuantificamos. Concepto Monto Costo de rentar una flota equivalente en el horizonte $82,499,308 Costo total de propiedad de la flota adquirida $59,920,900 Ahorro acumulado $22,578,408 (27.4%) Año en que la compra supera a la renta Año 4 Retorno del cliente sobre su inversión 58.0% En qué plazo conviene la compra. El desembolso inicial hace que la renta resulte más barata los primeros años;"
+    },
+    {
+      "section": "operaciones",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.7617,
+      "threshold": 0.26,
+      "category": "negacion_o_contraste",
+      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
+      "text": "El costo preliminar de fabricación se estima en $225,000 MXN por vehículo básico. Adicionalmente, cada unidad contempla un kit de siete accesorios modulares con un costo estimado de $12,550 MXN. Se incluye una reserva de contingencia del 10% sobre los costos presupuestados para posibles variaciones durante la ejecución del contrato. PROPUESTA COMERCIAL Precio propuesto de $350,000 MXN por unidad equipada, sin IVA. El contrato de 70 unidades asciende a $24,500,000 MXN, con un excedente presupuestado de $5,389,150 y un margen estimado de 22%, considerando la contingencia."
+    },
+    {
+      "section": "vehiculo",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.7527,
+      "threshold": 0.26,
+      "category": "seccion_mixta",
+      "hypothesis": "La sección mezcla propuesta técnica con costos o riesgos.",
+      "text": "Indicador Valor Precio por vehículo (entregado en Jones Creek) USD 6,900 Costo entregado por vehículo USD 5,476.38 Margen por vehículo USD 1,423.62 (20.6%) Ingresos de 44 vehículos USD 303,600 Utilidad antes de impuestos USD 26,639 (8.8%) Punto de equilibrio Unidad 20 (CapEx total USD 36,000) Servicio anual (44 vehículos) USD 15,400; aporte neto USD 9,400 Valor del contrato a 5 años USD 380,600 (vehículos más servicio)"
+    },
+    {
+      "section": "cliente",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.7357,
+      "threshold": 0.26,
+      "category": "negacion_o_contraste",
+      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
+      "text": "No tenemos un padrón verificado de campamentos juveniles de recreación, por lo que no inventamos un mercado total. Mostramos escenarios del contrato con JCO, basados en el cupo que describe la guía. Escenario Vehículos Ingresos por vehículos (USD) Lógica Año 1 (base) 44 303,600 4 clases × 10 alumnos + 4 de repuesto Ampliación (años 2 a 5) 53 +62,100 Clases de 12 alumnos: 48 en uso + 5 de repuesto Servicio a 5 años (44) — 77,000 USD 350 por vehículo al año Los ingresos de ampliación suponen el mismo precio de USD 6,900; son supuestos del equipo, no pronósticos."
+    },
+    {
+      "section": "ventas",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.7243,
+      "threshold": 0.26,
+      "category": "confusion_de_clase",
+      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
+      "text": "50 vehículos (mes 18) 30% $7,350,000 Total del contrato 100% $24,500,000 ADMINISTRACIÓN Y CONTROL FINANCIERO El anticipo de Outdoor Adventure Holdings (OAH) se destinará principalmente a la compra de materiales y componentes necesarios para iniciar la producción. CIV conservará una reserva de capital de trabajo de $1,800,000 MXN para respaldar sus necesidades operativas, mientras que las adquisiciones se realizarán de manera escalonada conforme al programa de fabricación."
+    },
+    {
+      "section": "competencia",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.7159,
+      "threshold": 0.26,
+      "category": "confusion_de_clase",
+      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
+      "text": "Tiempo de Kubota RTV- 3 Cilindros 1,300 lbs / $530,000 MXN Distribuidor de espera largos por refacciones X1140 Diésel / 24 HP 1,300 lbs ($24,500 USD - maquinaria importadas. $26,500 USD) 3 años integrales. Capacitación Ataraxia AT-X 3 Cilindros 1,074 lbs / $450,000 MXN Venta Directa de técnica para mantenimiento in- Titan Diésel / 23 HP 4,000 lbs ($22,500 USD) Fabrica (B2B) house 3 años integrales."
+    },
+    {
+      "section": "vehiculo",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.7131,
+      "threshold": 0.26,
+      "category": "seccion_mixta",
+      "hypothesis": "La sección mezcla propuesta técnica con costos o riesgos.",
+      "text": "Qué pasa si los costos o el precio se mueven Escenario Margen por vehículo Equilibrio Utilidad del contrato Base USD 1,424 Unidad 20 USD 26,639 BOM +15 % USD 822 Unidad 35 USD 163 Precio −10 % USD 734 Unidad 39 −USD 3,721 BOM +15 % y precio −10 % USD 132 Unidad 213 −USD 30,203 Para JCO: ¿cuánto debe cobrar para recuperar la inversión? Con 44 vehículos y servicio, JCO paga USD 303,600 el primer año y USD 15,400 al año de servicio, o USD 76,120 al año repartidos en cinco temporadas."
+    },
+    {
+      "section": "competencia",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.5729,
+      "threshold": 0.26,
+      "category": "negacion_o_contraste",
+      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
+      "text": "Tours Guiados ($2,500 MXN / ~$125 USD): Tarifa promedio estándar de parques de aventura de clase mundial en la región. Cubre el uso del vehículo, guía bilingüe, consumibles y seguros. Mantiene un margen de ganancia conservador del 40% tras deducir la nómina operativa de los guías y paramédicos. Day-Pass / Renta Privada ($3,500 MXN / ~$175 USD): Tarifa premium para movilidad autónoma por las 250,000 hectáreas (sin límite de horas). Al eliminar el sueldo del guía de la ecuación, el margen de ganancia asciende al 50%."
+    },
+    {
+      "section": "ventas",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.4979,
+      "threshold": 0.26,
+      "category": "confusion_de_clase",
+      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
+      "text": "• Avance del proceso: RFP entregado, presentación realizada, finalista y contrato firmado. • Precio promedio logrado contra USD 6,900 y margen contra USD 1,424. • Ocupación de las clases en 2028 (meta inicial de 60%, supuesto). • Referencias y casos de éxito con otros campamentos."
+    },
+    {
+      "section": "operaciones",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.473,
+      "threshold": 0.26,
+      "category": "negacion_o_contraste",
+      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
+      "text": "la compra la supera a partir del cuarto y la ventaja se amplía desde entonces, porque el activo sigue sirviendo mientras la renta se paga cada mes. Supuestos de los que depende este modelo Supuesto Si falla Cómo lo mitigamos 1,040 horas de operación por unidad El costo por hora y el punto de equilibrio se El contrato de servicio se ajusta por horas reales, no por al año desplazan calendario Consumo medio de 1.8 L/h Varía el costo de combustible del cliente Se sustituye con la medición de la unidad demostrativa (hipótesis) en el mes 3"
+    },
+    {
+      "section": "operaciones",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.4727,
+      "threshold": 0.26,
+      "category": "seccion_mixta",
+      "hypothesis": "La sección mezcla propuesta técnica con costos o riesgos.",
+      "text": "The EXR-26 Balam enters the property long before the first guests arrive. Twenty Balam Build units arrive at month 6 to support the construction of Outdoor Adventure Holdings' 250,000-hectare project, replacing rented vehicles from month 6."
+    },
+    {
+      "section": "vehiculo",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.4687,
+      "threshold": 0.26,
+      "category": "seccion_mixta",
+      "hypothesis": "La sección mezcla propuesta técnica con costos o riesgos.",
+      "text": "From the coast to the jungle, the EXR-26 Balam is one heavy-duty platform for loose sand, rainy-season mud and white limestone (sascab) roads, built for 40 °C days, humidity and salt air."
+    },
+    {
+      "section": "ingresos",
+      "true_label": 1,
+      "predicted_label": 0,
+      "probability": 0.0599,
+      "threshold": 0.26,
+      "category": "confusion_de_clase",
+      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
+      "text": "un compromiso de disponibilidad medido y reportado cada mes; el kit de refacciones en piso; y la capacitación y certificación anual de su personal. Un vehículo de catálogo se compra a un distribuidor y se repara donde ese distribuidor indique. En Yucatán, eso se mide en días de tránsito."
+    },
+    {
+      "section": "inversion",
+      "true_label": 1,
+      "predicted_label": 0,
+      "probability": 0.0609,
+      "threshold": 0.26,
+      "category": "confusion_de_clase",
+      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
+      "text": "La propuesta económica de CIV contempla la fabricación de 70 vehículos utilitarios modulares, equipados con siete accesorios intercambiables y un paquete de servicios que incluye consumibles para las primeras 250 horas de operación, capacitación del personal de OAH y transporte hasta Yucatán."
+    },
+    {
+      "section": "ingresos",
+      "true_label": 1,
+      "predicted_label": 0,
+      "probability": 0.0774,
+      "threshold": 0.26,
+      "category": "negacion_o_contraste",
+      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
+      "text": "Vehículo Motor Lista (USD) Control y edad | UTC · Análisis de mercado · Página 1 Polaris RZR cc 7,499 + 400 10 años o más; limitador ajustable y control por app Polaris Ranger cc 6,299 Control de velocidad y geocerca por app Kayo S cc 5,599 Para niños de 10 años o más; limitador de acelerador Hisun Sector cc 5,649 Limitador mecánico ajustable SSR SRU170RS 169 cc 4,459 Sin dato de control de velocidad Son precios de venta al público para familias de la guía de Dirt Wheels de 2024 y del sitio de Polaris; JCO compraría una flota con servicio. Ningún vehículo de esa lista declara un rango desde 7 años con ajuste de talla."
+    },
+    {
+      "section": "riesgos",
+      "true_label": 1,
+      "predicted_label": 0,
+      "probability": 0.0783,
+      "threshold": 0.26,
+      "category": "texto_corto",
+      "hypothesis": "El fragmento tiene poco contexto para decidir.",
+      "text": "Fuentes de mercado: Dirt Wheels (guía de UTV juveniles 2024) y sitio de Polaris. | · Thor Cub · Página 10"
+    },
+    {
+      "section": "riesgos",
+      "true_label": 1,
+      "predicted_label": 0,
+      "probability": 0.0839,
+      "threshold": 0.26,
+      "category": "negacion_o_contraste",
+      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
+      "text": "sin contacto previo ni datos de flota. Fuentes: Dirt Wheels, 2024 Youth UTV Buyer’s Guide; polaris.com (RZR 200); guía Baja SAE 2027 Business Presentation. | UTC · Análisis de mercado · Página 2"
+    }
+  ],
+  "ood": [
+    {
+      "id": "ood_01",
+      "expected": "rechazar",
+      "reason_expected": "texto vacío",
+      "actual_reject_reason": "texto_vacio_o_muy_corto",
+      "rejected": true,
+      "probability": 0.0,
+      "text": ""
+    },
+    {
+      "id": "ood_02",
+      "expected": "rechazar",
+      "reason_expected": "otro idioma",
+      "actual_reject_reason": "fuera_de_vocabulario",
+      "rejected": true,
+      "probability": 0.4052,
+      "text": "Hello, I would like to book a flight to New York next week. Please confirm the price and the baggage allowance."
+    },
+    {
+      "id": "ood_03",
+      "expected": "rechazar",
+      "reason_expected": "receta, fuera de dominio",
+      "actual_reject_reason": "idioma_no_espanol",
+      "rejected": true,
+      "probability": 0.3377,
+      "text": "Preheat the oven to 180 degrees. Mix flour, sugar and butter, then bake the cake for forty minutes until golden."
+    },
+    {
+      "id": "ood_04",
+      "expected": "rechazar",
+      "reason_expected": "código, fuera de dominio",
+      "actual_reject_reason": "muy_pocas_palabras",
+      "rejected": true,
+      "probability": 0.1712,
+      "text": "def fibonacci(n): if n <= 1: return n return fibonacci(n-1) + fibonacci(n-2)"
+    },
+    {
+      "id": "ood_05",
+      "expected": "rechazar",
+      "reason_expected": "deporte, fuera de dominio",
+      "actual_reject_reason": null,
+      "rejected": false,
+      "probability": 0.1178,
+      "text": "El equipo local ganó el partido tres a uno con dos goles en el segundo tiempo y subió al primer lugar de la tabla."
+    },
+    {
+      "id": "ood_06",
+      "expected": "rechazar",
+      "reason_expected": "texto legal, fuera de dominio",
+      "actual_reject_reason": null,
+      "rejected": false,
+      "probability": 0.1248,
+      "text": "La Constitución establece que toda persona tiene derecho a la educación y que el Estado debe garantizar su acceso en condiciones de igualdad."
+    },
+    {
+      "id": "ood_07",
+      "expected": "rechazar",
+      "reason_expected": "texto de relleno",
+      "actual_reject_reason": "fuera_de_vocabulario",
+      "rejected": true,
+      "probability": 0.1473,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": "ood_08",
+      "expected": "rechazar",
+      "reason_expected": "solo emojis",
+      "actual_reject_reason": "texto_vacio_o_muy_corto",
+      "rejected": true,
+      "probability": 0.1712,
+      "text": "🎉🎉🎉 🔥🔥🔥 ✨✨✨"
+    },
+    {
+      "id": "ood_09",
+      "expected": "rechazar",
+      "reason_expected": "texto sin sentido",
+      "actual_reject_reason": "texto_vacio_o_muy_corto",
+      "rejected": true,
+      "probability": 0.1712,
+      "text": "asdf qwer zxcv mnbv poiu lkjh ghfd trew yuiop ñlkj mnbg vcxz"
+    },
+    {
+      "id": "ood_10",
+      "expected": "rechazar",
+      "reason_expected": "receta en español, fuera de dominio",
+      "actual_reject_reason": "fuera_de_vocabulario",
+      "rejected": true,
+      "probability": 0.1289,
+      "text": "Receta de mole poblano: use chile ancho, chile pasilla, chocolate, tortilla, almendras y especias; muela todo y cocine a fuego lento."
+    }
+  ]
+}

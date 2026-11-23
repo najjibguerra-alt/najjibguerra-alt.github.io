@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Análisis · Triaje financiero</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="analysis-body">
+    <div class="analysis-shell">
+      <header class="analysis-top">
+        <div>
+          <p class="eyebrow">Rúbrica · sección 4</p>
+          <h1>Errores y fuera de dominio</h1>
+          <p id="eval-note" class="eval-note">Cargando evaluación…</p>
+        </div>
+        <a class="ghost" href="./index.html">Volver al clasificador</a>
+      </header>
+
+      <div id="eval-kpis" class="kpi-grid"></div>
+
+      <div class="analysis-meta">
+        <article class="mini-card">
+          <p class="eyebrow">Matriz de confusión</p>
+          <div id="confusion" class="matrix"></div>
+        </article>
+        <article class="mini-card">
+          <p class="eyebrow">Calibración y costo</p>
+          <div id="calibration" class="stack"></div>
+        </article>
+      </div>
+
+      <div class="analysis-panes">
+        <section class="pane">
+          <div class="pane-head">
+            <div>
+              <p class="eyebrow">Análisis de errores</p>
+              <h2>20 casos mal clasificados</h2>
+            </div>
+            <div id="error-filters" class="filters"></div>
+          </div>
+          <div id="error-list" class="pane-scroll"></div>
+        </section>
+        <section class="pane">
+          <div class="pane-head">
+            <div>
+              <p class="eyebrow">Fuera de dominio</p>
+              <h2>10 entradas ajenas</h2>
+            </div>
+          </div>
+          <div id="ood-list" class="pane-scroll"></div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="./evaluacion.js"></script>
+  </body>
+</html>
