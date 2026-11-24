@@ -107,7 +107,7 @@ function render(data) {
     .join("");
 }
 
-fetch("./evaluation.json?v=2", { cache: "no-cache" })
+fetch("./evaluation.json?v=3", { cache: "no-cache" })
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();

@@ -59,7 +59,7 @@ async function loadModel() {
     setSession("#session-finance", 0);
     setSession("#session-market", 0);
     setSession("#session-reject", 0);
-    const response = await fetch("./model.json?v=1", { cache: "no-cache" });
+    const response = await fetch("./model.json?v=2", { cache: "no-cache" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const raw = await response.json();
     model = createModel(raw);
