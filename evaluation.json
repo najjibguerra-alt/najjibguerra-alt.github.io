@@ -1,6 +1,6 @@
 {
-  "provisional": true,
-  "test_label_source": "weak_provisional",
+  "provisional": false,
+  "test_label_source": "manual",
   "dataset": {
     "fragment_count": 666,
     "total_with_augmentation": 832,
@@ -20,23 +20,23 @@
   "costs": {
     "fp": 1.0,
     "fn": 5.0,
-    "model_per_1000": 514.8514851485148,
-    "raw_per_1000": 519.8019801980198,
+    "model_per_1000": 455.44554455445547,
+    "raw_per_1000": 460.3960396039604,
     "majority_per_1000": 742.5742574257425,
-    "keyword_per_1000": 465.34653465346537,
-    "logistic_per_1000": 504.950495049505
+    "keyword_per_1000": 346.53465346534654,
+    "logistic_per_1000": 475.2475247524752
   },
   "confusion": {
-    "tn": 138,
-    "fp": 34,
-    "fn": 14,
-    "tp": 16
+    "tn": 140,
+    "fp": 32,
+    "fn": 12,
+    "tp": 18
   },
   "metrics": {
-    "accuracy": 0.7623762376237624,
-    "precision": 0.32,
-    "recall": 0.5333333333333333,
-    "f1": 0.4
+    "accuracy": 0.7821782178217822,
+    "precision": 0.36,
+    "recall": 0.6,
+    "f1": 0.45
   },
   "calibration": {
     "temperature": 5.018911339130734,
@@ -44,10 +44,9 @@
     "ece_after": 0.08425164656336487
   },
   "errors_grouped": {
-    "seccion_mixta": 7,
-    "negacion_o_contraste": 7,
-    "confusion_de_clase": 5,
-    "texto_corto": 1
+    "seccion_mixta": 6,
+    "negacion_o_contraste": 6,
+    "confusion_de_clase": 8
   },
   "errors": [
     {
@@ -69,16 +68,6 @@
       "category": "negacion_o_contraste",
       "hypothesis": "Una negación o contraste cambia el sentido financiero.",
       "text": "Capacidad: Motor y Canal de Marco y Modelo Carga / Precio de lista Garantia y soporte operativo Potencia adquisición Arrastre $470,000 MXN - 3 Cilindros 1,250 lbs / $510,000 MXN 2 años limitados. Requiere Polaris Pro SD Intermediario Diésel / 24 HP 2,500 lbs ($23,500 USD - translado a agencia para validez. $25,500 USD) $420,000 MXN - John Deere Gator 3 Cilindros 1,400 lbs / $460,000 MXN Distribuidor 1 año o 1,000 horas. Enfoque XUV855M Diésel / 22.8 HP 1,500 lbs ($21,000 USD - africola agricola, no turistico. $23,000 USD) $490,000 MXN - 2 años a 2,000 horas."
-    },
-    {
-      "section": "suministro",
-      "true_label": 0,
-      "predicted_label": 1,
-      "probability": 0.7698,
-      "threshold": 0.26,
-      "category": "seccion_mixta",
-      "hypothesis": "La sección mezcla propuesta técnica con costos o riesgos.",
-      "text": "Adquirir materiales conforme avance la Vincular los cobros a los hitos contractuales. producción. Reserva presupuestaria Control mensual Contemplar el 10 % de contingencia en los Supervisar ingresos, egresos y obligaciones costos. pendientes. Nota financiera: El capital inicial de $5,000,000 MXN y su distribución son estimaciones de planeación. El esquema de pagos está sujeto a negociación con OAH y su viabilidad deberá comprobarse mediante un flujo de efectivo mensual que contemple costos operativos, impuestos y posibles retrasos."
     },
     {
       "section": "operaciones",
@@ -109,16 +98,6 @@
       "category": "seccion_mixta",
       "hypothesis": "La sección mezcla propuesta técnica con costos o riesgos.",
       "text": "Indicador Valor Precio por vehículo (entregado en Jones Creek) USD 6,900 Costo entregado por vehículo USD 5,476.38 Margen por vehículo USD 1,423.62 (20.6%) Ingresos de 44 vehículos USD 303,600 Utilidad antes de impuestos USD 26,639 (8.8%) Punto de equilibrio Unidad 20 (CapEx total USD 36,000) Servicio anual (44 vehículos) USD 15,400; aporte neto USD 9,400 Valor del contrato a 5 años USD 380,600 (vehículos más servicio)"
-    },
-    {
-      "section": "cliente",
-      "true_label": 0,
-      "predicted_label": 1,
-      "probability": 0.7357,
-      "threshold": 0.26,
-      "category": "negacion_o_contraste",
-      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
-      "text": "No tenemos un padrón verificado de campamentos juveniles de recreación, por lo que no inventamos un mercado total. Mostramos escenarios del contrato con JCO, basados en el cupo que describe la guía. Escenario Vehículos Ingresos por vehículos (USD) Lógica Año 1 (base) 44 303,600 4 clases × 10 alumnos + 4 de repuesto Ampliación (años 2 a 5) 53 +62,100 Clases de 12 alumnos: 48 en uso + 5 de repuesto Servicio a 5 años (44) — 77,000 USD 350 por vehículo al año Los ingresos de ampliación suponen el mismo precio de USD 6,900; son supuestos del equipo, no pronósticos."
     },
     {
       "section": "ventas",
@@ -161,6 +140,16 @@
       "text": "Tours Guiados ($2,500 MXN / ~$125 USD): Tarifa promedio estándar de parques de aventura de clase mundial en la región. Cubre el uso del vehículo, guía bilingüe, consumibles y seguros. Mantiene un margen de ganancia conservador del 40% tras deducir la nómina operativa de los guías y paramédicos. Day-Pass / Renta Privada ($3,500 MXN / ~$175 USD): Tarifa premium para movilidad autónoma por las 250,000 hectáreas (sin límite de horas). Al eliminar el sueldo del guía de la ecuación, el margen de ganancia asciende al 50%."
     },
     {
+      "section": "inversion",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.5539,
+      "threshold": 0.26,
+      "category": "confusion_de_clase",
+      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
+      "text": "La evaluación para el cliente considerará el costo de adquisición, combustible, mantenimiento, refacciones, mano de obra y posibles tiempos de inactividad."
+    },
+    {
       "section": "ventas",
       "true_label": 0,
       "predicted_label": 1,
@@ -201,16 +190,6 @@
       "text": "From the coast to the jungle, the EXR-26 Balam is one heavy-duty platform for loose sand, rainy-season mud and white limestone (sascab) roads, built for 40 °C days, humidity and salt air."
     },
     {
-      "section": "ingresos",
-      "true_label": 1,
-      "predicted_label": 0,
-      "probability": 0.0599,
-      "threshold": 0.26,
-      "category": "confusion_de_clase",
-      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
-      "text": "un compromiso de disponibilidad medido y reportado cada mes; el kit de refacciones en piso; y la capacitación y certificación anual de su personal. Un vehículo de catálogo se compra a un distribuidor y se repara donde ese distribuidor indique. En Yucatán, eso se mide en días de tránsito."
-    },
-    {
       "section": "inversion",
       "true_label": 1,
       "predicted_label": 0,
@@ -221,34 +200,54 @@
       "text": "La propuesta económica de CIV contempla la fabricación de 70 vehículos utilitarios modulares, equipados con siete accesorios intercambiables y un paquete de servicios que incluye consumibles para las primeras 250 horas de operación, capacitación del personal de OAH y transporte hasta Yucatán."
     },
     {
+      "section": "cliente",
+      "true_label": 1,
+      "predicted_label": 0,
+      "probability": 0.082,
+      "threshold": 0.26,
+      "category": "negacion_o_contraste",
+      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
+      "text": "Su solicitud menciona el interés en desarrollar parte de la propiedad como senderos para vehículos UTV. Es una línea de ingreso que aprovecha infraestructura que el proyecto ya tendrá. Seis unidades pueden operar en recorrido guiado durante las ventanas en que la operación no las requiere, sin inversión adicional en vehículos, y el centro de servicio ya cubre esa operación. Bajo un escenario conservador (180 recorridos mensuales a $850, costo variable de $210 y temporada de once meses) el ingreso anual atribuible al complejo es de $1,267,200, equivalente al 3.3% de su inversión en la flota."
+    },
+    {
+      "section": "riesgos",
+      "true_label": 1,
+      "predicted_label": 0,
+      "probability": 0.0992,
+      "threshold": 0.26,
+      "category": "confusion_de_clase",
+      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
+      "text": "Precios y tipo de cambio Cotizar antes de firmar; cláusula de ajuste cambiario de ±10%. Seguridad infantil y responsabilidad Pruebas propuestas, limitadores, paro remoto y póliza de producto cotizada antes de firmar. Retrasos de piezas o transporte Seis semanas de colchón; proveedores alternos en proceso de homologación y compra consolidada por lote. Estimados del BOM (21 %) Cotizar los 6 renglones marcados antes de firmar. Aranceles y aduana Confirmar el tratamiento con un agente aduanal."
+    },
+    {
+      "section": "vehiculo",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.4154,
+      "threshold": 0.26,
+      "category": "negacion_o_contraste",
+      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
+      "text": "Sobre ello, la primera unidad del programa se construye para que ustedes la operen, en su terreno y con su personal, antes de comprometer las Concepto Valor Costo de la unidad demostrativa $230,000: costo en serie de $170,000 por el factor 1.35 de fabricación individual Plazo desde la liberación del anticipo 12 semanas: 3 de preparación, 5 de fabricación, 2 de ensamble y 2 de verificación Protocolo Siete pruebas: recorrido todoterreno, frenado, maniobrabilidad, operación prolongada, consumo, mantenimiento e inspección estructural Los criterios de aceptación se pactan con ustedes antes de la prueba. Si la unidad no los cumple, no ha…"
+    },
+    {
+      "section": "financiera",
+      "true_label": 0,
+      "predicted_label": 1,
+      "probability": 0.4147,
+      "threshold": 0.26,
+      "category": "confusion_de_clase",
+      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
+      "text": "En comprendemos que evaluar un proyecto de capital a mediano plazo requiere considerar el valor del dinero en el tiempo. La inflación y la fluctuación cambiaria erosionan el poder adquisitivo futuro. Por ello, sometimos nuestros flujos de efectivo a un modelo de Flujos de Efectivo Descontados (VPN), aplicando una Tasa de Devaluación/Inflación del 7% anual (un estándar conservador corporativo en México). Periodo Flujo nominal Factor (7%) Flujo real Balance acumulado"
+    },
+    {
       "section": "ingresos",
       "true_label": 1,
       "predicted_label": 0,
-      "probability": 0.0774,
+      "probability": 0.1098,
       "threshold": 0.26,
-      "category": "negacion_o_contraste",
-      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
-      "text": "Vehículo Motor Lista (USD) Control y edad | UTC · Análisis de mercado · Página 1 Polaris RZR cc 7,499 + 400 10 años o más; limitador ajustable y control por app Polaris Ranger cc 6,299 Control de velocidad y geocerca por app Kayo S cc 5,599 Para niños de 10 años o más; limitador de acelerador Hisun Sector cc 5,649 Limitador mecánico ajustable SSR SRU170RS 169 cc 4,459 Sin dato de control de velocidad Son precios de venta al público para familias de la guía de Dirt Wheels de 2024 y del sitio de Polaris; JCO compraría una flota con servicio. Ningún vehículo de esa lista declara un rango desde 7 años con ajuste de talla."
-    },
-    {
-      "section": "riesgos",
-      "true_label": 1,
-      "predicted_label": 0,
-      "probability": 0.0783,
-      "threshold": 0.26,
-      "category": "texto_corto",
-      "hypothesis": "El fragmento tiene poco contexto para decidir.",
-      "text": "Fuentes de mercado: Dirt Wheels (guía de UTV juveniles 2024) y sitio de Polaris. | · Thor Cub · Página 10"
-    },
-    {
-      "section": "riesgos",
-      "true_label": 1,
-      "predicted_label": 0,
-      "probability": 0.0839,
-      "threshold": 0.26,
-      "category": "negacion_o_contraste",
-      "hypothesis": "Una negación o contraste cambia el sentido financiero.",
-      "text": "sin contacto previo ni datos de flota. Fuentes: Dirt Wheels, 2024 Youth UTV Buyer’s Guide; polaris.com (RZR 200); guía Baja SAE 2027 Business Presentation. | UTC · Análisis de mercado · Página 2"
+      "category": "confusion_de_clase",
+      "hypothesis": "El vocabulario del fragmento se parece a la otra clase.",
+      "text": "El análisis financiero contemplará: Materiales: acero, elementos estructurales y consumibles. Componentes: motor, transmisión, suspensión, dirección, frenos y sistemas auxiliares. Manufactura: corte, soldadura, fabricación y ensamble. Operación: mano de obra, herramientas, instalaciones y logística. Posventa: refacciones, mantenimiento y atención al cliente."
     }
   ],
   "ood": [
