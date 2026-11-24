@@ -1,8 +1,8 @@
-const CACHE_NAME = "practica1-pwa-v12";
+const CACHE_NAME = "practica1-pwa-v13";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./style.css",
+  "./style.css?v=12",
   "./app.js",
   "./inference.js",
   "./manifest.webmanifest",
