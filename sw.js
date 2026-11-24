@@ -1,4 +1,4 @@
-const CACHE_NAME = "practica1-pwa-v11";
+const CACHE_NAME = "practica1-pwa-v12";
 const APP_SHELL = [
   "./",
   "./index.html",

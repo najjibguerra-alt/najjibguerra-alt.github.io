@@ -611,33 +611,41 @@ button {
 
 .analysis-body {
   min-height: 100vh;
-  overflow: auto;
-}
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .analysis-shell {
-  min-height: 100vh;
   width: min(1280px, calc(100% - 28px));
   margin: 0 auto;
-  padding: 16px 0 14px;
+  padding: 26px 0 34px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  min-height: 0;
-}
+  gap: 18px;
 }
 
 .analysis-top,
 .pane-head {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: 12px 20px;
   align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.analysis-top {
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.analysis-top .ghost {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .analysis-top h1,
 .pane-head h2 {
-  margin: 4px 0 0;
+  margin: 8px 0 0;
   font-size: 28px;
   letter-spacing: -0.04em;
 }
@@ -653,24 +661,10 @@ button {
 }
 
 .analysis-panes {
-
-
-@media (max-width: 768px) {
-  .analysis-panes {
-    grid-template-columns: 1fr !important;
-  }
-  .pane {
-    min-height: 0;
-  }
-  .pane-scroll {
-    padding-right: 0;
-  }
-}
-  flex: 1;
-  min-height: 0;
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
   gap: 12px;
+  align-items: start;
 }
 
 .pane {
@@ -911,29 +905,40 @@ button {
 }
 
 @media (max-width: 860px) {
-  .analysis-body { min-height: 100vh; overflow: auto;
-}
-.analysis-shell { min-height: 100vh;
-    height: auto;
+  .analysis-meta,
+  .analysis-panes {
+    grid-template-columns: 1fr;
   }
 
-  .analysis-meta,
-  .analysis-panes,
   .analysis-top,
   .pane-head {
-    grid-template-columns: 1fr;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .analysis-top {
+    margin-bottom: 10px;
+  }
+
+  .eval-note {
+    max-width: 100%;
+    margin-top: 10px;
   }
 
   .pane-scroll {
-    max-height: 70vh;
+    max-height: 65vh;
+    padding-right: 0;
   }
 
   .workspace,
   .details,
-  .kpi-grid,
   .eval-grid {
     grid-template-columns: 1fr;
+  }
+
+  .kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .eval-head {
