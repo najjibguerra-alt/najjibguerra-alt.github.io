@@ -1,14 +1,14 @@
 {
-  "name": "Triaje financiero · Práctica 1",
-  "short_name": "Triaje Fin.",
+  "name": "SAE - Business Case · Práctica 1",
+  "short_name": "SAE Business Case",
   "description": "Clasificador binario de fragmentos de business case: finanzas/riesgo vs mercado/propuesta.",
   "lang": "es-MX",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#080b14",
-  "theme_color": "#0b1020",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "categories": ["business", "productivity", "education"],
   "icons": [
     {
