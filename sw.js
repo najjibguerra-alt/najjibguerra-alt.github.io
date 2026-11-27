@@ -1,8 +1,8 @@
-const CACHE_NAME = "practica1-pwa-v16";
+const CACHE_NAME = "practica1-pwa-v17";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./style.css?v=12",
+  "./style.css",
   "./app.js",
   "./inference.js",
   "./manifest.webmanifest",
@@ -11,6 +11,7 @@ const APP_SHELL = [
   "./evaluacion.html",
   "./evaluacion.js",
   "./favicon.svg",
+  "./sae-logo.png",
   "./icon-192.png",
   "./icon-512.png",
   "./apple-touch-icon.png",

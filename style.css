@@ -977,6 +977,17 @@ button {
   box-shadow: 0 10px 26px rgba(37, 99, 235, 0.2);
 }
 
+.brand-mark.brand-logo {
+  width: auto;
+  height: 42px;
+  max-width: 76px;
+  object-fit: contain;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+
 .status,
 .pill,
 .ghost,
