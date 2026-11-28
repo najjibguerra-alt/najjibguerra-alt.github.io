@@ -62,12 +62,13 @@
               <button id="classify-btn" class="primary" type="button" disabled>Clasificar fragmento</button>
               <span class="hint">⌘/Ctrl + Enter</span>
             </div>
-            <div class="examples">
-              <span class="examples-label">Ejemplos:</span>
-              <button type="button" class="chip" data-example="finance">Finanzas</button>
-              <button type="button" class="chip" data-example="market">Mercado</button>
-              <button type="button" class="chip" data-example="oodEnglish">Otro idioma</button>
-              <button type="button" class="chip" data-example="oodRecipe">Receta</button>
+            <div class="examples" aria-labelledby="examples-heading">
+              <span id="examples-heading" class="examples-label">Ejemplos de demostración:</span>
+              <button type="button" class="chip" data-example="finance">Finanzas esperado</button>
+              <button type="button" class="chip" data-example="market">Mercado esperado</button>
+              <button type="button" class="chip" data-example="difficult">Difícil</button>
+              <button type="button" class="chip" data-example="oodRecipe">Fuera de dominio</button>
+              <p class="examples-note">Estos fragmentos no formaron parte del entrenamiento, la validación ni la prueba del modelo.</p>
             </div>
           </div>
 

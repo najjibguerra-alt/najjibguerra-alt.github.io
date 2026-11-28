@@ -403,6 +403,14 @@ button {
   margin-right: 2px;
 }
 
+.examples-note {
+  flex-basis: 100%;
+  margin: 2px 0 0;
+  color: var(--faint);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
 .chip {
   border: 1px solid var(--border);
   border-radius: 999px;

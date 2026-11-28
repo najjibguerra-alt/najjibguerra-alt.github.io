@@ -29,11 +29,11 @@ let sessionReject = 0;
 
 const EXAMPLES = {
   finance:
-    "La inversión inicial del proyecto es de USD 1,250,000 e incluye la compra de maquinaria, el capital de trabajo y los costos de instalación. El flujo de efectivo proyectado a cinco años tiene un margen bruto del 32%, un VAN positivo de USD 410,000 y una TIR del 18.4%. El punto de equilibrio se alcanza en el mes 14. Los principales riesgos son el aumento del costo de los materiales y la demora en la cadena de suministro; se propone una contingencia del 8% del presupuesto.",
+    "La inversión inicial de la planta de empaque es de USD 2.1 millones, con un periodo de recuperación de 4.2 años. El VAN del proyecto a diez años es de USD 780 mil con una tasa de descuento del 12 %, y la TIR estimada es de 19.5 %. Se contempla financiamiento bancario del 60 % con una tasa anual de 11 %; el principal riesgo es la variación del tipo de cambio sobre los insumos importados.",
   market:
-    "El cliente objetivo son resorts de aventura en la península de Yucatán que necesitan una flota de vehículos todo terreno para tours guiados. El mercado de turismo de aventura crece 7% anual y los competidores principales son Polaris, Can-Am y proveedores locales de renta. La propuesta se dirige a gerentes de operaciones y dueños de hospedajes boutique. El canal principal será la venta directa con demostraciones en sitio, apoyada por marketing digital y alianzas con operadores turísticos.",
-  oodEnglish:
-    "Hello, I would like to book a flight to New York next week. Please confirm the price and the baggage allowance for two passengers.",
+    "Nuestro cliente objetivo son cadenas de cafeterías independientes en Monterrey que buscan diferenciarse con productos locales. Competimos con distribuidores nacionales que ofrecen precios más bajos, por lo que la propuesta de valor se centra en trazabilidad, entrega semanal y acompañamiento comercial en punto de venta.",
+  difficult:
+    "La propuesta técnica incluye una flota de 12 vehículos eléctricos para el recorrido del personal; cada unidad cuesta USD 18,500 con mantenimiento incluido, por lo que el costo mensual por vehículo se mantiene por debajo de la alternativa de renta.",
   oodRecipe:
     "Preheat the oven to 180 degrees. Mix flour, sugar and butter, then bake the cake for forty minutes until golden. Let it cool before serving.",
 };
@@ -59,7 +59,7 @@ async function loadModel() {
     setSession("#session-finance", 0);
     setSession("#session-market", 0);
     setSession("#session-reject", 0);
-    const response = await fetch("./model.json?v=2", { cache: "no-cache" });
+    const response = await fetch("./model.json?v=1", { cache: "no-cache" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const raw = await response.json();
     model = createModel(raw);
